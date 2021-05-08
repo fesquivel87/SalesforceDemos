@@ -1,0 +1,64 @@
+public with sharing class FEM_MonthClass{
+	
+    /*
+    public FEM_MonthClass() {
+        
+    }
+    */
+    
+    public static void Listas(){
+    List<String> my_list = new List<String>();
+        my_list.add('Enero');
+        my_list.add('Febrero');
+        my_list.add('Marzo');
+        my_list.add('Abril');
+        my_list.add('Mayo');
+        my_list.add('Junio');
+        my_list.add('Julio');
+        my_list.add('Agosto');
+        my_list.add('Septiembre');
+        my_list.add('Octubre');
+        my_list.add('Noviembre');
+        my_list.add('Diciembre');
+        
+        for(String mes : my_list){
+            System.debug('Imprimiendo el mes: ' + mes);
+        }
+    }
+    
+    public static Map<Integer, String> getColecciones(){
+        
+        Map<Integer, String> mapa1 = new Map<Integer, String>();
+        mapa1.put(1, 'Enero');
+        mapa1.put(2, 'Febrero');
+        mapa1.put(3, 'Marzo');
+        mapa1.put(4, 'Abril');
+        mapa1.put(5, 'Mayo');
+        mapa1.put(6, 'Junio');
+        mapa1.put(7, 'Julio');
+        mapa1.put(8, 'Agosto');
+        mapa1.put(9, 'Septiembre');
+        mapa1.put(10, 'Octubre');
+        mapa1.put(11, 'Noviembre');
+        mapa1.put(12, 'Diciembre');
+              
+        return mapa1;
+        
+    }
+	/*
+	public static Message getMessage() {
+        
+        Message msg = new Message();
+        msg.mesActual = Date.month();
+        msg.mapa = FEM_MonthClass.getColecciones();
+        return msg;
+    }    
+    
+    public class Message {
+
+        public Integer mesActual;
+        public Map<Integer, String> mapa;
+    }
+    */
+        
+}
